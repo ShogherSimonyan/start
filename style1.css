@@ -1,0 +1,667 @@
+@font-face {
+    font-family: 'Crimson Text', serif;
+    src: url(./CrimsonText-SemiBold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+mainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Crimson Text', serif;
+}
+
+mainContainer>.kanach {
+    background-color: #74C69D;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 30px 0;
+}
+
+mainContainer>.kanach>main {
+    max-width: 1480px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+mainContainer>.kanach>main>.parent1 {
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    padding-top: 20px;
+}
+mainContainer>.kanach>main>.parent1>.child1>a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+mainContainer>.kanach>main>.parent1>.home>p.menu{
+    font-size: 30px;
+    display: flex;
+    align-items: flex-end;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+mainContainer>.kanach>main>.parent1>.home>ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+mainContainer>.kanach>main>.parent1>.home>ul.aside.active{
+    left: 0;
+    transition: 0.5s;
+   }
+mainContainer>.kanach>main>.parent1>.home>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+mainContainer>.kanach>main>.parent1>.home>ul>li>a:active{
+    color:rgba(11, 156, 52, 0.965) ;
+    
+}
+mainContainer>.kanach>main>.parent1>.home>ul>.home::after{
+    width: 100%;
+}
+mainContainer>.kanach>main>.parent1>.home>ul>li{
+    height: 30px;
+    padding: 0 7px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+mainContainer>.kanach>main>.parent1>.home>ul>li::after{
+    content: '';
+    display: block;
+    background-color: rgba(11, 156, 52, 0.965);
+    width: 100%;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom:0 ;
+    left: 0;
+    transition: 400ms;
+}
+mainContainer>.kanach>main>.parent1>.home>ul>li:hover::after{
+    width: 100%;
+}
+mainContainer>.kanach>main>.parent1>.home>ul>li:hover{
+    color: rgba(11, 156, 52, 0.784);
+}
+mainContainer>.kanach>main>.parent1>.home>ul>button.pakel{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+mainContainer>.kanach>header {
+    max-width: 1480px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+mainContainer>.kanach>header>.parent2 {
+    color: white;
+    flex-wrap: wrap;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+mainContainer>.kanach>header>.parent2>.child3 {
+    display: flex;
+    flex: 1 1 400px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+mainContainer>.kanach>header>.parent2>.child3>h2 {
+    max-width: 250px;
+}
+
+mainContainer>.kanach>header>.parent2>.child3>p {
+    max-width: 350px;
+}
+
+mainContainer>.kanach>header>.parent2>.child3>button {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+}
+mainContainer>.kanach>header>.parent2>.child3>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+}
+
+mainContainer>.kanach>header>.parent2>.img {
+    display: flex;
+    flex: 0 0 645px;
+    height: 379px;
+    justify-content: center;
+    position: relative;
+}
+
+mainContainer>.kanach>header>.parent2>.img>.nkar1>img {
+    width: 100%;
+    z-index: 1;
+}
+mainContainer>.kanach>header>.parent2>.img>.lamp {
+    top: 38.2%;
+    left: 39%;
+    position: absolute;
+    width: 18.75%;
+    height: 38%;
+    opacity: 1;
+    
+}
+
+mainContainer>.kanach>header>.parent2>.img>.lamp>.spiral {
+    bottom: 10%;
+}
+
+mainContainer>.kanach>header>.parent2>.img>.lamp>.lighting {
+    width: 100%;
+    animation: lighting 1s linear infinite alternate ;
+}
+
+mainContainer>.kanach>header>.parent2>.img>.lamp>svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+mainContainer>nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+mainContainer>nav>.aragast {
+    max-width: 1480px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 70px 0;
+}
+
+mainContainer>nav>.aragast>.parent3>h5 {
+    color: #74C69D;
+}
+
+mainContainer>nav>.aragast>.parent3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+mainContainer>nav>.aragast>.parent3>p {
+    max-width: 280px;
+}
+
+mainContainer>nav>.aragast>.nkarner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+mainContainer>nav>.aragast>.LearnMore {
+    display: flex;
+    justify-content: center;
+}
+
+mainContainer>nav>.aragast>.LearnMore>button {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
+mainContainer>nav>.aragast>.LearnMore>button:active {
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+
+mainContainer>nav>.parent4 {
+    max-width: 1480px;
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 70px;
+}
+
+mainContainer>nav>.parent4>.img1 {
+    display: flex;
+    flex: 1 1 400px;
+    justify-content: center;
+}
+
+mainContainer>nav>.parent4>.img1>img {
+    width: 100%;
+}
+
+mainContainer>nav>.parent4>.child4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+mainContainer>nav>.parent4>.child4>h2 {
+    font-size: 30px;
+    max-width: 300px;
+}
+
+mainContainer>nav>.parent4>.child4>p {
+    max-width: 400px;
+}
+mainContainer>nav>.parent4>.child4>div>button {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+mainContainer>nav>.parent4>.child4>div>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+mainContainer>nav>.parent5 {
+    max-width: 1480px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+mainContainer>nav>.parent5>.img2 {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+mainContainer>nav>.parent5>.img2>img {
+    width: 100%;
+}
+
+mainContainer>nav>.parent5>.child5 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+mainContainer>nav>.parent5>.child5>div>button {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+mainContainer>nav>.parent5>.child5>div>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+
+mainContainer>nav>.parent5>.child5>h2 {
+    font-size: 30px;
+    max-width: 300px;
+}
+
+mainContainer>nav>.parent5>.child5>p {
+    max-width: 400px;
+}
+
+mainContainer>nav>.mejtex {
+    max-width: 1480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+mainContainer>nav>.mejtex>h5 {
+    color: #74C69D;
+}
+mainContainer>nav>.mejtex>p {
+    max-width: 300px;
+    text-align: center;
+}
+mainContainer>nav>.verj {
+    max-width: 1480px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+mainContainer>nav>.verj>table>tbody>tr {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+mainContainer>nav>.verj>table>tbody>tr>td {
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+
+mainContainer>nav>.kochak {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+mainContainer>nav>.kochak>button {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+}
+mainContainer>nav>.kochak>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+mainContainer>nav>.grid{
+    width: 90%;
+    max-width: 1480px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    gap: 50px;
+    justify-content: space-between;
+}
+mainContainer>nav>.grid>img{
+    width: 100%;
+}
+mainContainer>nav>button{
+    padding: 15px 40px;
+    border: none;
+    background-color: rgba(33, 37, 41, 1);
+    color: white;
+    border-radius: 7px;
+    margin-bottom: 70px;
+}
+mainContainer>nav>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+mainContainer>footer {
+    display: flex;
+    justify-content: center;
+    background-color: #74C69D;
+    color: white;
+}
+mainContainer>footer>.parent6 {
+    width: 90%;
+    max-width: 1480px;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+mainContainer>footer>.parent6>.child6 {
+    display: flex;
+    gap: 20px;
+}
+mainContainer>.month {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+mainContainer>.month>div{
+    width: 90%;
+    max-width: 1480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 0;
+    gap: 20px;
+}
+mainContainer>.month>div>.basic{
+    max-width: 320px;
+    padding: 70px 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+
+}
+mainContainer>.month>div>.basic:hover{
+    background-color: #74c69d66;
+}
+mainContainer>.month>div>.basic>div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+mainContainer>.month>div>.basic .dolar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+mainContainer>.month>div>.basic span{
+    color: rgba(33, 37, 41, 0.5);
+}
+mainContainer>.month>div>.basic>ul{
+   list-style-image: url(./sinvolner/Vector.png);
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   position: relative;
+   left: 40px;
+}
+mainContainer>.month>div>.basic>button{
+   margin: 0 60px;
+   padding: 10px 0;
+   background-color: rgba(33, 37, 41, 1);
+   color: white;
+   border: none;
+   border-radius: 7px;
+    
+}
+mainContainer>.month>div>.basic>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+mainContainer>.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+mainContainer>.contact>div{
+    width: 90%;
+    max-width: 1480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+mainContainer>.contact>div>.name{
+    width: 100%;
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+mainContainer>.contact>div>.name>div>input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 7px;
+}
+mainContainer>.contact>div>.name>div>input.message{
+    min-height: 70px;
+}
+mainContainer>.contact>div>.name>button{
+    width: 100%;
+    height: 40px;
+    background: rgba(33, 37, 41, 1);
+    color: white;
+    border: none;
+    border-radius: 7px;
+
+}
+mainContainer>.contact>div>.name>button:active{
+    background-color: rgba(16, 225, 75, 0.466);
+    color: black;
+}
+mainContainer>.contact>div>.qartez{
+    flex: 1 1 400px;
+}
+
+
+
+
+
+@keyframes lighting {
+    0%{
+        fill: #FFB546;
+    }
+    50%{
+        fill: #ffe946;
+    }
+    100%{
+        fill: #f6ff46;
+    }
+}
+
+@media only screen and (min-width: 670px){
+    mainContainer>.kanach>main>.parent1>.home>p.menu{
+        display: none;
+    }
+    mainContainer>.kanach>main>.parent1>.home>ul>button.pakel{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    mainContainer>nav>.grid{
+        grid-template-columns: repeat(auto-fill, 400px);
+        justify-content: center;
+    }
+    mainContainer>.month>div{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 670px) {
+    mainContainer>.kanach>header>.parent2>.img {
+        flex: 0 0 445px;
+        height: 279px;
+        
+    }
+    
+    mainContainer>.kanach>header>.parent2>.img>.nkar1>img {
+        width: 80%;
+    }
+    mainContainer>.kanach>header>.parent2>.img>.lamp {
+        top: 37.8%;
+        left: 32.2%;
+        width: 12.75%;
+        height: 30%;
+        opacity: 1;
+        
+    }
+    mainContainer>.kanach>header>.parent2>.img>.lamp>.spiral {
+        width: 50%;
+        bottom: 22%;
+        left: 25%;
+    }
+    mainContainer>.kanach>header>.parent2>.img>.lamp>.bottom {
+        width: 40%;
+        bottom: 17%;
+        left: 29%;
+        
+    }
+    mainContainer>footer>.parent6 {
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    mainContainer>.kanach>main>.parent1>.home>ul.aside{
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            background-color: rgba(116, 198, 157, 1);
+            border: 1px solid rgba(11, 156, 52, 0.965);
+            z-index: 2;
+            padding: 70px;
+            position: absolute;
+            left: -550px;
+            cursor: pointer;
+            align-items: flex-end;
+            font-size: 20px;
+        }
+}
+@media screen and (max-width: 470px) {
+    mainContainer>.kanach>header>.parent2>.img {
+        flex: 0 0 300px;
+        height: 200px;  
+    }
+    mainContainer>.kanach>header>.parent2>.img>.lamp {
+        top: 44.5%;
+        opacity: 1;
+    }
+    
+    mainContainer>.kanach>header>.parent2>.img>.lamp>.spiral {
+        width: 50%;
+        bottom: 40%;
+        left: 25%;
+    }
+    
+    mainContainer>.kanach>header>.parent2>.img>.lamp>.bottom {
+        width: 40%;
+        bottom: 45%;
+        left: 29.5%;
+        
+    }
+    mainContainer>nav>.grid{
+    grid-template-columns: repeat(auto-fill, 250px);
+    }
+}
